@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Asher Valentini Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Asher Valentini - Developer, Engineer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asher Valentini | About</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Asher Valentini</h1>
-            <p>Embedded Software Engineer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>A quick study who takes initiative yet remains coachable. Capable of coming up with unique solutions but equally able to understand outside perspectives and build on previous ideas.</p>
-        </div>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">Asher V.</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h1 class="section-title">Hello, I'm Asher</h1>
+      <p>
+        I'm a passionate C++ developer and embedded systems engineer 
+        based in Vienna, Austria. I thrive on building efficient, 
+        reliable firmware and bringing hardware to life.
+      </p>
+      <p>
+        This website is a straightforward reflection of my style: 
+        minimal, slightly “bare-metal,” and definitely with a Linux 
+        vibe. Feel free to explore my CV and portfolio.
+      </p>
     </section>
+  </main>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Pressure-Driven Flow Controller</h3>
-                <p>Designed the circuit board to drive four piezoelectric micropumps. Developed RTOS-based firmware for ESP32 microcontrollers with PID control algorithms.</p>
-            </div>
-            <div class="project">
-                <h3>Medical Device Control System</h3>
-                <p>Designed and implemented embedded systems for medical devices using ESP32, featuring control of stepper motors, solenoid drivers, and I2C/SPI sensors.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Asher Valentini</p>
+  </footer>
 
-    <section id="resume" class="section">
-        <div class="container">
-            <h2>Resume</h2>
-            <p><strong>Education:</strong> BEng Mechatronic (Honors), University of Stellenbosch, RSA, 2018 – 2022</p>
-            <p><strong>Experience:</strong></p>
-            <ul>
-                <li><strong>Embedded Software Engineer, Cellectric BioSciences (2023 – Present)</strong></li>
-                <li><strong>Mechatronic Engineer, BlackGold.Earth (2021 – 2022)</strong></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:ashermvalentini@gmail.com">ashermvalentini@gmail.com</a></p>
-            <p>Phone: +43 660 827 1605</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Asher Valentini. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- JS Script -->
+  <script src="script.js"></script>
 </body>
 </html>

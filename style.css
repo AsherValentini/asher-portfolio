@@ -1,105 +1,121 @@
-/* Global Styles */
+/* style.css */
+
+/* -------------------------------------------------- */
+/*   FONT IMPORTS (OPTIONAL, but can look good)       */
+/*   You can use a programmer style font, e.g.        */
+/*   Fira Code, Inconsolata, Roboto Mono, etc.        */
+/* -------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* -------------------------------------------------- */
+/*   ROOT VARIABLES: Tweak these to get the charcoal  */
+/*   and off-white vibe you like                      */
+/* -------------------------------------------------- */
+:root {
+  --bg-color: #2c2c2c;        /* Dark charcoal background */
+  --bg-alt: #434343;          /* Slightly lighter dark area */
+  --text-color: #eeeeee;      /* Off-white text */
+  --accent-color: #66bb6a;    /* Example: a soft green accent */
+  --link-hover-color: #88c080;/* Slight hover accent */
+  --header-height: 60px;
+  --font-main: 'Fira Code', monospace; /* Programmer style font */
+}
+
+/* -------------------------------------------------- */
+/*   RESET                                             */
+/* -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------- */
+/*   BODY                                              */
+/* -------------------------------------------------- */
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Header Styles */
+/* -------------------------------------------------- */
+/*   HEADER / NAV                                      */
+/* -------------------------------------------------- */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  border-bottom: 2px solid #333;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    font-weight: 300;
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--accent-color);
 }
 
 nav ul {
-    margin-top: 20px;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2s ease;
 }
 
-nav ul li a {
-    color: white;
-    font-weight: 600;
+nav a:hover {
+  color: var(--link-hover-color);
 }
 
-/* Section Styles */
-.section {
-    padding: 60px 0;
+/* -------------------------------------------------- */
+/*   MAIN CONTENT WRAPPER                              */
+/* -------------------------------------------------- */
+main {
+  margin-top: var(--header-height);
+  padding: 20px;
+  min-height: calc(100vh - var(--header-height));
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.project {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer Styles */
+/* -------------------------------------------------- */
+/*   FOOTER                                            */
+/* -------------------------------------------------- */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--bg-alt);
+  border-top: 2px solid #333;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+/* -------------------------------------------------- */
+/*   UTILITY CLASSES                                   */
+/* -------------------------------------------------- */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
 
-    header h1 {
-        font-size: 2rem;
-    }
+p {
+  margin-bottom: 1rem;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Example card style if you want to use it somewhere */
+.card {
+  background-color: #3a3a3a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--accent-color);
 }
