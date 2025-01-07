@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Asher Valentini - CV">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Asher Valentini - CV" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Asher Valentini | CV</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header / Navbar -->
+  <!-- HEADER -->
   <header>
     <div class="logo">Asher V.</div>
     <nav>
@@ -21,62 +20,68 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- MAIN CONTENT -->
   <main>
     <section>
-      <h1 class="section-title">Asher Valentini</h1>
-      <p>Vienna, Austria | Italian & RSA Passport</p>
-      <p>Phone: +43 660 827 1605</p>
-      <p>Email: <a href="mailto:ashermvalentini@gmail.com">ashermvalentini@gmail.com</a></p>
-    </section>
-
-    <hr>
-
-    <section>
-      <h2>Professional Summary</h2>
+      <h1 class="section-title">Curriculum Vitae</h1>
       <p>
-        A resourceful engineer who balances initiative with coachability.
-        Adept at developing creative solutions and integrating feedback 
-        to refine ideas. Strong communicator and team player with a proven 
-        track record in embedded systems, firmware development, and mechatronic 
-        design.
+        Vienna, Austria | Italian & RSA Passport <br/>
+        Phone: +43 660 827 1605 <br/>
+        Email: <a href="mailto:ashermvalentini@gmail.com">ashermvalentini@gmail.com</a>
       </p>
     </section>
 
     <section>
+      <h2>Professional Summary</h2>
+      <div class="card">
+        <p>
+          A resourceful engineer who balances initiative with coachability. 
+          Adept at developing creative solutions and integrating feedback to 
+          refine ideas. Strong communicator and team player with a proven 
+          track record in embedded systems, firmware development, 
+          and mechatronic design.
+        </p>
+      </div>
+    </section>
+
+    <section>
       <h2>Experience</h2>
-      
+
+      <!-- EXPERIENCE 1 -->
       <div class="card">
         <h3>Embedded Software Engineer</h3>
         <p><strong>Cellectric BioSciences | 2023 – Present</strong></p>
         <ul>
-          <li>Circuit & Firmware Design: Developed electronic systems (stepper/solenoid drivers, I2C/SPI sensors) for ESP32-based medical devices.</li>
-          <li>RTOS & RPC Implementation: Created C++ firmware using Real-Time Operating Systems (RTOS) principles and Remote Procedure Call (RPC) frameworks.</li>
-          <li>GUI & Control Software: Built cross-platform GUI (Qt) and Python 3 application following OOP and MVC patterns.</li>
-          <li>DevOps & CI/CD: Established pipelines, Docker containers, and packaging processes.</li>
+          <li>Circuit & Firmware Design: Developed ESP32-based medical devices (steppers, solenoids, I2C/SPI sensors).</li>
+          <li>RTOS & RPC Implementation: Created C++ firmware with Real-Time Operating Systems and RPC frameworks.</li>
+          <li>GUI & Control Software: Built cross-platform Qt and Python 3 applications using OOP and MVC patterns.</li>
+          <li>DevOps & CI/CD: Established pipelines with Docker containers and packaging processes.</li>
           <li>Microfluidic System: Led design of subsystem integrating pumps, valves, sensor feedback.</li>
         </ul>
       </div>
 
+      <!-- EXPERIENCE 2 -->
       <div class="card">
         <h3>Mechatronic Engineer</h3>
         <p><strong>BlackGold.Earth | 2021 – 2022</strong></p>
         <ul>
           <li>Sustainable Systems: Designed a modular micro-farm container facility.</li>
-          <li>Geospatial Software: Collaborated on proprietary software utilizing satellite imagery for produce tracking.</li>
+          <li>Geospatial Software: Collaborated on a proprietary satellite imagery solution for produce tracking.</li>
         </ul>
       </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>BEng in Mechatronic (Honors, Upper Second Class)</strong></p>
-      <p>University of Stellenbosch, South Africa | 2018 – 2022</p>
-      <ul>
-        <li>Thesis (Cum Laude, 80%): Developed a heating vest prototype featuring novel conductive fabric.</li>
-        <li>Strengthened expertise in digital control, C++, OOP, and sensor integration.</li>
-        <li>Nominated for Stellenbosch University Innovation Award; second runner-up from 700+ candidates.</li>
-      </ul>
+      <div class="card">
+        <h3>BEng in Mechatronic (Honors, Upper Second Class)</h3>
+        <p>University of Stellenbosch, South Africa | 2018 – 2022</p>
+        <ul>
+          <li>Thesis (Cum Laude, 80%): Developed a heating vest prototype featuring novel conductive fabric.</li>
+          <li>Strengthened expertise in digital control, C++, OOP, and sensor integration.</li>
+          <li>Nominated for Stellenbosch University Innovation Award; second runner-up from 700+ candidates.</li>
+        </ul>
+      </div>
     </section>
 
     <section>
@@ -84,50 +89,55 @@
       <div class="card">
         <h3>Pressure-Driven Flow Controller</h3>
         <ul>
-          <li>Circuit Design: Built a board driving four piezoelectric micropumps integrated with an ESP32.</li>
-          <li>RTOS-Based Firmware: Employed PID control algorithms for real-time feedback and optimized performance.</li>
+          <li>Built a board driving four piezoelectric micropumps integrated with an ESP32.</li>
+          <li>Employed RTOS and PID control algorithms for real-time feedback and optimization.</li>
         </ul>
       </div>
       <div class="card">
         <h3>Medical Device Development (Cellectric BioSciences)</h3>
         <ul>
-          <li>Clinical & Research Adoption: Spearheaded development from concept to functional prototype, now accepted for hospital-based clinical trials.</li>
+          <li>Spearheaded development from concept to functional prototype, accepted for hospital clinical trials.</li>
         </ul>
       </div>
     </section>
 
     <section>
       <h2>Key Achievements</h2>
-      <ul>
-        <li>Innovative Medical Device: Accepted for clinical trials and research partnerships.</li>
-        <li>Award-Winning Thesis: Placed second runner-up in the Stellenbosch University Innovation Awards.</li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li>Innovative Medical Device: Accepted for clinical trials and multiple research partnerships.</li>
+          <li>Award-Winning Thesis: Second runner-up in the Stellenbosch University Innovation Awards.</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Certifications</h2>
-      <ul>
-        <li>ISO 13485 Internal Auditor</li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li>ISO 13485 Internal Auditor</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Technical Skills</h2>
-      <ul>
-        <li>Programming & Software: Python (Advanced), Qt (Advanced), Flutter/Dart (Basic), C++ STL (Advanced)</li>
-        <li>System & Architecture: ARM Architecture (Intermediate), ESP32 Architecture (Advanced), Yocto Project (Intermediate)</li>
-        <li>Electronic Design: EasyEDA (Advanced), Altium (Intermediate), LTSpice (Intermediate)</li>
-        <li>Collaboration & Version Control: Jira, Confluence, GitHub, Git</li>
-      </ul>
+      <div class="card">
+        <ul>
+          <li><strong>Programming & Software:</strong> Python (Advanced), Qt (Advanced), Flutter/Dart (Basic), C++ STL (Advanced)</li>
+          <li><strong>System & Architecture:</strong> ARM (Intermediate), ESP32 (Advanced), Yocto (Intermediate)</li>
+          <li><strong>Electronic Design:</strong> EasyEDA (Advanced), Altium (Intermediate), LTSpice (Intermediate)</li>
+          <li><strong>Collaboration & Version Control:</strong> Jira, Confluence, GitHub, Git</li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Asher Valentini</p>
   </footer>
 
-  <!-- JS Script -->
   <script src="script.js"></script>
 </body>
 </html>
