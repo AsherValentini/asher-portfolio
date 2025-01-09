@@ -186,7 +186,7 @@ footer {
   
   .project-images img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Keeps images square */
+    aspect-ratio: 4 / 3; /* Keeps images square */
     object-fit: cover; /* Ensures the image fills the frame without distortion */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
