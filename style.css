@@ -180,16 +180,15 @@ footer {
 
 .project-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 2 or 3 columns */
     gap: 10px;
-    margin-bottom: 1rem;
   }
   
   .project-images img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1; /* Keeps images square */
+    object-fit: cover; /* Ensures the image fills the frame without distortion */
     border-radius: 8px;
-    object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
@@ -197,6 +196,7 @@ footer {
   .project-images img:hover {
     transform: scale(1.05);
   }
+  
 
   .tech-badges {
     display: flex;
