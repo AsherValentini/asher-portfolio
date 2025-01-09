@@ -186,7 +186,7 @@ footer {
   
   .project-images img {
     width: 100%;
-    aspect-ratio: 4 / 3; /* Keeps images square */
+    aspect-ratio: 3.2 / 4; /* Keeps images square */
     object-fit: cover; /* Ensures the image fills the frame without distortion */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -220,5 +220,31 @@ footer {
     background-color: var(--clr-accent);
     color: #fff;
   }
+  
+/* CSS for portfolio video hover effect */
+.video-container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .portfolio-video {
+    width: 49.5%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    max-height: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    image-rendering: crisp-edges; /* Improves video quality */
+  }
+  
+  .portfolio-video:hover {
+    transform: scale(1.5); /* Reduced scaling to fit within the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensures the hovered video is on top */
+  }
+  
+  
   
   

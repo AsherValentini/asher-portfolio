@@ -24,9 +24,6 @@
   <main>
     <section>
       <h1 class="section-title">My Portfolio</h1>
-      <p>
-        Below is a selection of projects that showcase my work in circuit, firmware, application software design. 
-      </p>
     </section>
 
     <!-- PROJECT 1 -->
@@ -35,8 +32,8 @@
           <!-- Project Images -->
           <div class="project-images">
             <img src="assets/images/piezo_driver_v2_iso.jpg" alt="Project Image 1" />
-            <img src="assets/images/piezo_driver_v2_top.jpg" alt="Project Image 2" />
-            <img src="assets/images/piezo_driver_v2_iso.jpg" alt="Project Image 3" />
+            <img src="assets/images/piezo_v2_iso_flat.jpg" alt="Project Image 2" />
+            <img src="assets/images/piezo_v2_iso_flat_empty.jpg" alt="Project Image 3" />
           </div>
       
           <!-- Project Description -->
@@ -63,21 +60,29 @@
       
     <!-- PROJECT 2 -->
     <section>
-      <div class="card">
-        <h3>Cross-Platform GUI with Qt</h3>
-        <p>
-          Desktop application for live sensor data visualization and device 
-          control. Implemented a modular MVP pattern for maintainability, 
-          with real-time updates from embedded devices.
-        </p>
-        <a href="https://github.com/YOUR_GITHUB/qt-gui" 
-           target="_blank"
-           style="color: var(--clr-accent);"
-        >
-          View on GitHub
-        </a>
-      </div>
-    </section>
+        <div class="card">
+          <h3>Cross-Platform GUI with Qt</h3>
+          <p>
+            Desktop application for live sensor data visualization and device control.
+            Hover over the videos below to see the GUI in action.
+          </p>
+          <div class="video-container">
+            <video class="portfolio-video" muted loop>
+              <source src="assets/videos/UI_color_tracking.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video class="portfolio-video" muted loop>
+              <source src="assets/videos/UI_Demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <a href="https://github.com/YOUR_GITHUB/qt-gui" target="_blank" style="color: var(--clr-accent);">
+            View on GitHub
+          </a>
+        </div>
+      </section>
+      
+      
 
     <!-- Add more projects as you wish -->
     <section>
