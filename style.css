@@ -197,5 +197,28 @@ footer {
   .project-images img:hover {
     transform: scale(1.05);
   }
+
+  .tech-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .tech-badges span {
+    background-color: var(--clr-bg-alt);
+    color: var(--clr-accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tech-badges span:hover {
+    background-color: var(--clr-accent);
+    color: #fff;
+  }
   
   
