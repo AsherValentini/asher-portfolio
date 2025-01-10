@@ -226,6 +226,54 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
+/* Piezo V1 Images Container */
+.piezo-v1-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px;
+  }
+  
+  /* Piezo V1 Images */
+  .piezo-v1-images img {
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Keeps images in a consistent ratio */
+    object-fit: cover; /* Ensures the image fills the frame without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    image-rendering: auto; /* Forces the browser to render images at better quality */
+  }
+  
+  /* Piezo V1 Hover Effect for Images */
+  .piezo-v1-images img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+/* Pac Images Container */
+.pac-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px;
+  }
+  
+  /* Pac Images */
+  .pac-images img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Keeps images in a consistent ratio */
+    object-fit: cover; /* Ensures the image fills the frame without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    image-rendering: auto; /* Forces the browser to render images at better quality */
+  }
+  
+  /* Pac Hover Effect for Images */
+  .pac-images img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
   .tech-badges {
     display: flex;
     gap: 10px;
