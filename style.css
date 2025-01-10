@@ -178,25 +178,53 @@ footer {
   }
 }
 
+/* PCB Images Container */
 .project-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust to 2 or 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px;
   }
   
+  /* PCB Images */
   .project-images img {
     width: 100%;
-    aspect-ratio: 3.2 / 4; /* Keeps images square */
+    aspect-ratio: 3 / 4; /* Keeps images in a consistent ratio */
     object-fit: cover; /* Ensures the image fills the frame without distortion */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    image-rendering: auto; /* Forces the browser to render images at better quality */
   }
   
+  /* PCB Hover Effect for Images */
   .project-images img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+/* BST Images Container */
+.bst-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px;
   }
   
+  /* BST Images */
+  .bst-images img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeps images in a consistent ratio */
+    object-fit: cover; /* Ensures the image fills the frame without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    image-rendering: auto; /* Forces the browser to render images at better quality */
+  }
+  
+  /* BST Hover Effect for Images */
+  .bst-images img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
   .tech-badges {
     display: flex;
@@ -231,7 +259,7 @@ footer {
   .portfolio-video {
     width: 49.5%;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
     object-fit: cover;
     max-height: 400px;
     max-width: 100%;
