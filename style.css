@@ -179,7 +179,7 @@ footer {
 }
 
 /* PCB Images Container */
-.project-images {
+  .project-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px;
@@ -203,7 +203,7 @@ footer {
   }
 
 /* BST Images Container */
-.bst-images {
+  .bst-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px;
@@ -227,7 +227,7 @@ footer {
   }
 
 /* Piezo V1 Images Container */
-.piezo-v1-images {
+  .piezo-v1-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px;
@@ -251,7 +251,7 @@ footer {
   }
 
 /* Pac Images Container */
-.pac-images {
+  .pac-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px;
@@ -298,7 +298,7 @@ footer {
   }
   
 /* CSS for portfolio video hover effect */
-.video-container {
+  .video-container {
     display: flex;
     gap: 1rem;
     position: relative;
@@ -320,6 +320,23 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 10; /* Ensures the hovered video is on top */
   }
+
+  .portfolio-video-bst {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1280 / 1848; /* Force the correct aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.portfolio-video-bst:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
   
   
   
