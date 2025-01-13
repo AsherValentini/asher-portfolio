@@ -260,7 +260,7 @@ footer {
   /* Pac Images */
   .pac-images img {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Keeps images in a consistent ratio */
+    aspect-ratio: 12 / 16; /* Keeps images in a consistent ratio */
     object-fit: cover; /* Ensures the image fills the frame without distortion */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -339,5 +339,25 @@ footer {
 }
   
   
-  
-  
+/* Inverse Game App Media Container */
+.inverse-media-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Inverse Images and Video Styling */
+.inverse-media-item {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* Consistent mobile screen format */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Images and Video */
+.inverse-media-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
