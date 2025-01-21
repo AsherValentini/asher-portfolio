@@ -6,7 +6,7 @@
 /* 1) FONT IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@600&display=swap');
 
-/* 2) ROOT VARIABLES */
+/* ROOT VARIABLES */
 :root {
   /* Color Palette */
   --clr-bg: #1E1E1E;            /* primary dark background */
@@ -24,7 +24,7 @@
   --font-heading: 'Montserrat', sans-serif;
 }
 
-/* 3) RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body {
   line-height: 1.6;
 }
 
-/* 4) HEADER & NAV */
+/* HEADER & NAV */
 header {
   position: sticky; /* So it sticks on top as you scroll */
   top: 0;
@@ -77,14 +77,14 @@ nav a:hover {
   color: var(--clr-accent-hover);
 }
 
-/* 5) MAIN LAYOUT */
+/* MAIN LAYOUT */
 main {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* 6) SECTIONS */
+/* SECTIONS */
 section {
   margin-bottom: 3rem;
 }
@@ -101,7 +101,7 @@ h2, h3, h4, h5, h6 {
   color: var(--clr-heading);
 }
 
-/* 7) HERO STYLE (for homepage) */
+/* HERO STYLE (for homepage) */
 .hero {
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@ h2, h3, h4, h5, h6 {
   background-color: var(--clr-accent-hover);
 }
 
-/* 8) CARD STYLING (used for experience, projects, etc.) */
+/* CARD STYLING (used for experience, projects, etc.) */
 .card {
   background-color: var(--clr-bg-alt);
   border-left: 3px solid var(--clr-accent);
@@ -159,7 +159,61 @@ h2, h3, h4, h5, h6 {
   background-color: #353535;
 }
 
-/* 9) FOOTER */
+.card-description {
+  padding: 1rem;
+}
+
+.card-description h2 {
+  font-size: 1.8rem;
+  color: var(--clr-heading);
+  margin-bottom: 1rem;
+}
+
+.card-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-description h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-description ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-description ul ul {
+  list-style: circle;
+  margin-left: 1.5rem;
+}
+
+/* TECH BADGES */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badges span {
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tech-badges span:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-heading);
+}
+/*FOOTER */
 footer {
   background-color: var(--clr-bg-alt);
   text-align: center;
@@ -179,191 +233,134 @@ footer {
 }
 
 /* PCB Images Container */
-  .project-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px;
-  }
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 10px;
+}
   
-  /* PCB Images */
-  .project-images img {
-    width: 100%;
-    aspect-ratio: 3 / 4; /* Keeps images in a consistent ratio */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    image-rendering: auto; /* Forces the browser to render images at better quality */
-  }
+/* PCB Images */
+.project-images img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Keeps images in a consistent ratio */
+  object-fit: cover; /* Ensures the image fills the frame without distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  image-rendering: auto; /* Forces the browser to render images at better quality */
+}
   
-  /* PCB Hover Effect for Images */
-  .project-images img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* PCB Hover Effect for Images */
+.project-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 /* BST Images Container */
-  .bst-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px;
-  }
+.bst-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 10px;
+}
   
-  /* BST Images */
-  .bst-images img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Keeps images in a consistent ratio */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    image-rendering: auto; /* Forces the browser to render images at better quality */
-  }
+ /* BST Images */
+.bst-images img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps images in a consistent ratio */
+  object-fit: cover; /* Ensures the image fills the frame without distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  image-rendering: auto; /* Forces the browser to render images at better quality */
+}
   
-  /* BST Hover Effect for Images */
-  .bst-images img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* BST Hover Effect for Images */
+.bst-images img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 /* Piezo V1 Images Container */
-  .piezo-v1-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px;
-  }
+.piezo-v1-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 10px;
+}
   
-  /* Piezo V1 Images */
-  .piezo-v1-images img {
-    width: 100%;
-    aspect-ratio: 4 / 5; /* Keeps images in a consistent ratio */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    image-rendering: auto; /* Forces the browser to render images at better quality */
-  }
-  
-  /* Piezo V1 Hover Effect for Images */
-  .piezo-v1-images img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* Piezo V1 Images */
+.piezo-v1-images img {
+  width: 100%;
+  aspect-ratio: 4 / 5; /* Keeps images in a consistent ratio */
+  object-fit: cover; /* Ensures the image fills the frame without distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  image-rendering: auto; /* Forces the browser to render images at better quality */
+}
+
+/* Piezo V1 Hover Effect for Images */
+.piezo-v1-images img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 /* Pac Images Container */
-  .pac-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 10px;
-  }
+.pac-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 10px;
+}
   
-  /* Pac Images */
-  .pac-images img {
-    width: 100%;
-    aspect-ratio: 12 / 16; /* Keeps images in a consistent ratio */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    image-rendering: auto; /* Forces the browser to render images at better quality */
-  }
+/* Pac Images */
+.pac-images img {
+  width: 100%;
+  aspect-ratio: 12 / 16; /* Keeps images in a consistent ratio */
+  object-fit: cover; /* Ensures the image fills the frame without distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  image-rendering: auto; /* Forces the browser to render images at better quality */
+}
   
-  /* Pac Hover Effect for Images */
-  .pac-images img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+/* Pac Hover Effect for Images */
+.pac-images img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-
-
-  /* Description Section */
-  .card-description {
-    padding: 1rem;
-  }
-
-  .card-description h2 {
-    font-size: 1.8rem;
-    color: var(--clr-heading);
-    margin-bottom: 1rem;
-  }
-
-  .card-description p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-
-  .card-description h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-description ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .card-description ul ul {
-    list-style: circle;
-    margin-left: 1.5rem;
-  }
-
-  .tech-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .tech-badges span {
-    background-color: var(--clr-bg);
-    color: var(--clr-accent);
-    padding: 0.4rem 0.8rem;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .tech-badges span:hover {
-    background-color: var(--clr-accent);
-    color: var(--clr-heading);
-  }
-  
 /* CSS for portfolio video hover effect */
-  .video-container {
-    display: flex;
-    gap: 1rem;
-    position: relative;
-  }
+.video-container {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
   
-  .portfolio-video {
-    width: 49.5%;
-    border-radius: 8px;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    object-fit: cover;
-    max-height: 400px;
-    max-width: 100%;
-    overflow: hidden;
-    image-rendering: crisp-edges; /* Improves video quality */
-  }
+.portfolio-video {
+  width: 49.5%;
+  border-radius: 8px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  object-fit: cover;
+  max-height: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  image-rendering: crisp-edges; /* Improves video quality */
+}
   
-  .portfolio-video:hover {
-    transform: scale(1.5); /* Reduced scaling to fit within the card */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 10; /* Ensures the hovered video is on top */
-  }
+.portfolio-video:hover {
+  transform: scale(1.5); /* Reduced scaling to fit within the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10; /* Ensures the hovered video is on top */
+}
 
-  .portfolio-video-bst {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1280 / 1848; /* Force the correct aspect ratio */
-    border-radius: 8px;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    object-fit: cover;
-    overflow: hidden;
+.portfolio-video-bst {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1280 / 1848; /* Force the correct aspect ratio */
+  border-radius: 8px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .portfolio-video-bst:hover {
