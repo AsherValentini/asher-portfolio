@@ -191,12 +191,24 @@
           <div class="card-description">
             <h2>Stepper Motor Driver Board</h2>
             <p>
-              A personal development of a stepper motor driver circuit board for interfacing with the TMC2209v1.1-v.13 driver breakout board. 
-              By taking advantage of the TMC2209v1.3's UART interface, the board's MCU canconfigure microstepping in software, however microstepping can also be set manually via onboard jumpers. 
-              In addition to its interface for 4 stepper drivers, the board is equipped to receive sensor feedback for 4 limit switches, as well as connections for I2C and USB transport layers.  
+              A personal development of a stepper motor driver <i>control board</i> for interfacing with TMC2209v1.1-v.3 stepper motor driver <i>breakout boards</i>. 
             </p>
             <h3>Key Highlights:</h3>
               <ul>
+                <li>Hardware </li>
+                  <ul>
+                    <li>4x stepper motor driver interfaces</li>
+                    <li>4x limit switch sensor feedback interfaces</li>
+                    <li>8x jumper interfaces for hardware based microstep configuration</li>
+                    <li>Interfaces for I2C and USB transport layers</li>
+                  </ul>
+                <li>Firmware </li>
+                  <ul>
+                    <li>ESP32 to TMC2209 UART interface for software based microstep configuration</li>
+                    <li>Impedence based limit detection</li>
+                    <li>RTOS based structure</li>
+                    <li>Custom RPC for serial over USB and/or I2C communication protocals</li>
+                  </ul>
                 <li>Personal/Commerical applications:</li>
                     <ul>
                       <li>Belt drives (Personal Project)</li>
