@@ -33,7 +33,7 @@
         <img src="assets/images/base_station_front_11.jpeg" alt="Project Image 3" />
       </div>
       <div class="card-description">
-        <h2>Cellctric Base Station</h2>
+        <h2>Cellectric Base Station</h2>
         <p>
           A medical device designed for fully automated and semi-automated 
           proprietary workflows in medical sample preparation. The product's design and manufacturing was a collaborative 
@@ -98,7 +98,8 @@
               <li>Firmware </li>
                 <ul>
                   <li>Frequency tracking algorithm</li>
-                  <li>PID control algorithm</li>
+                  <li>PID control algorithm regulating PWM signals to voltage boosters</li>
+                  <li>H-Bridge driving logic with shoot-through protection</li>
                   <li>RTOS based structure</li>
                   <li>Custom RPC for serial over USB and/or I2C communication</li>
                 </ul>
@@ -121,13 +122,6 @@
     <!-- GUI BST GUI -->
     <section>
       <div class="card">
-        <h3>Cross-Platform GUI with Qt</h3>
-        <p>
-          Desktop application for live sensor data visualization and device 
-          control. Implemented a modular MVP pattern for maintainability, 
-          with real-time updates from embedded devices.
-          Hover over the videos below to see the GUI and control softwware in action in action.
-        </p>
         <div class="video-container">
           <video class="portfolio-video-bst" muted loop playsinline>
             <source src="assets/videos/BST_DB_PG_1.mp4" type="video/mp4">
@@ -137,10 +131,50 @@
             <source src="assets/videos/BST_EXP_PG.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-        </div>        
-        <a href="https://github.com/YOUR_GITHUB/qt-gui" target="_blank" style="color: var(--clr-accent);">
-          View on GitHub
-        </a>
+        </div>   
+        <div class="card-description">
+          <h2>Cross-Platform GUI with Qt</h2>
+            <p>
+              Here is a closer look at the Cellectric Base Station's control application for live sensor data visualization and device 
+              control. Hover over the videos to see the GUI and control softwware in action.
+            </p>
+            Key Highlights:
+          </h3>
+          <ul>
+            <li>Mutlithreaded application folliwing OOP, MVC, and event-driven design patterns</li>
+            <li>Embedded protobuf serialization</li>
+            <li>Custom built state machine for serial over USB communcation sequencing</li>
+            <li>Data handling and visualization</li>
+              <ul>
+              <li>Working fluid flow rate feeback</li> 
+              <li>Current and voltage feedback from a propriety signal generator</li> 
+              <li>Temperature feeback</li> 
+              <li>Device connection statuses</li> 
+              </ul>
+              <li>Control</li>
+              <ul>
+              <li>2 peristaltic pumps</li> 
+              <li>4 stepper motors</li> 
+              <li>2 peltier pads (on/off algorithm for temperature control)</li> 
+              <li>1 Power Supply Unit's actuation and voltage rail settings</li> 
+              <li>1 Signal Generator's actuation, frequency and duty cycle settings</li> 
+              <li>4 Automated experiment protocols</li> 
+              </ul>
+          </ul>
+            <!-- Technology Badges -->
+            <div class="tech-badges">
+              <span>Python3</span>
+              <span>Qt</span>
+              <span>PyQt5</span>
+              <span>QThread</span>
+              <span>USB</span>
+              <span>Pyserial</span>
+              <span>Embedded Protobuf</span>
+              <span>Pandas</span>
+              <span>Numpy</span>
+              <span>Matplotlib</span>
+            </div>
+          <div>
       </div>
     </section>
     <!-- PROJECT STEPPER -->
