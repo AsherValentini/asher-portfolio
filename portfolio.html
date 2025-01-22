@@ -35,15 +35,16 @@
       <div class="card-description">
         <h2>Cellectric Base Station</h2>
         <p>
-          A medical device designed for fully automated and semi-automated 
+          A medical device (RUO) designed for fully automated and semi-automated 
           proprietary workflows in medical sample preparation. The product's design and manufacturing was a collaborative 
           effort of two mechanical engineers, one power electronic engineer and myself (embedded software and microfluidics). 
         </p>
         <h3>Key Highlights:</h3>
         <ul>
-            Deployed in:
+            <li>Deployed in:</li>
             <ul>
               <li>1 hospital</li>
+              <li>1 clinical trial</li>
               <li>3 research laboratories</li>
               <li>1 university</li>
               <li>2 countries</li>
@@ -58,7 +59,7 @@
           <span>Automation Design</span>
           <span>Embedded C++</span>
           <span>Python3</span>
-          <span>Embedded Proto</span>
+          <span>Embedded Protobuf</span>
           <span>USB</span>
           <span>ModBus</span>
           <span>I2C</span>
@@ -90,14 +91,14 @@
             <ul>
               <li>Hardware </li>
                 <ul>
-                  <li>Drives up to 4 Lee Company HP SERIES micropumps</li>
+                  <li>Drives up to 4 Lee Company HP SERIES micropumps (600mBar/pump)</li>
                   <li>Onboard ESP32 with an FTDI UART to USB converter</li>
                   <li>4x voltage boosters controlling highside voltages to 4x H-Bridges</li>
-                  <li>4x current tracking op amps for peripheral impedance feeback</li>
+                  <li>4x current tracking op amps for peripheral impedance feedback</li>
                 </ul>
               <li>Firmware </li>
                 <ul>
-                  <li>Frequency tracking algorithm</li>
+                  <li>Drive frequency optimization</li>
                   <li>PID control algorithm regulating PWM signals to voltage boosters</li>
                   <li>H-Bridge driving logic with shoot-through protection</li>
                   <li>RTOS based structure</li>
@@ -110,7 +111,7 @@
               <span>EasyEDA</span>
               <span>Embedded C++</span>
               <span>FreeRTOS</span>
-              <span>Embedded Proto</span>
+              <span>Embedded Protobuf</span>
               <span>USB</span>
               <span>UART</span>
               <span>I2C</span>
@@ -133,13 +134,12 @@
           </video>
         </div>   
         <div class="card-description">
-          <h2>Cross-Platform GUI with Qt</h2>
+          <h2>Cross-Platform Desktop Application with Qt</h2>
             <p>
               Here is a closer look at the Cellectric Base Station's control application for live sensor data visualization and device 
               control. Hover over the videos to see the GUI and control softwware in action.
             </p>
-            Key Highlights:
-          </h3>
+          <h3>Key Highlights:</h3>
           <ul>
             <li>Mutlithreaded application folliwing OOP, MVC, and event-driven design patterns</li>
             <li>Embedded protobuf serialization</li>
@@ -188,23 +188,37 @@
           </div>
       
           <!-- Project Description -->
-          <h3>Stepper Driver Board</h3>
-          <p>
-            Developed a stepper driver circuit board for precise liquid control in microfluidic systems. Utilized real-time firmware and advanced control algorithms.
-          </p>
+          <div class="card-description">
+            <h2>Stepper Motor Driver Board</h2>
+            <p>
+              A personal development of a stepper motor driver circuit board for interfacing with the TMC2209v1.1-v.13 driver breakout board. 
+              By taking advantage of the TMC2209v1.3's UART interface, the board's MCU canconfigure microstepping in software, however microstepping can also be set manually via onboard jumpers. 
+              In addition to its interface for 4 stepper drivers, the board is equipped to receive sensor feedback for 4 limit switches, as well as connections for I2C and USB transport layers.  
+            </p>
+            <h3>Key Highlights:</h3>
+              <ul>
+                <li>Personal/Commerical applications:</li>
+                    <ul>
+                      <li>Belt drives (Personal Project)</li>
+                      <li>Lead screws (Personal Project)</li>
+                      <li>Syringe pumps (Personal Project)</li>
+                      <li>Peristaltic pumps (Cellectric Base Station Microfluidic Module)</li>
+                      <li>Ball on a Plate (Personal Project)</li>
+                    </ul>
+              </ul>
       
           <!-- Technology Badges -->
           <div class="tech-badges">
+            <span>EasyEDA</span>
             <span>Embedded C++</span>
-            <span>ESP32</span>
             <span>FreeRTOS</span>
-            <span>KiCad</span>
+            <span>Embedded Protobuf</span>
+            <span>USB</span>
+            <span>UART</span>
+            <span>I2C</span>
+            <span>FlexiStepper</span>
           </div>
-      
-          <!-- GitHub Link -->
-          <a href="https://github.com/YOUR_GITHUB/project1" target="_blank" style="color: var(--clr-accent);">
-            View on GitHub
-          </a>
+    
         </div>
       </section>
     <!-- GUI BOAP -->
@@ -225,9 +239,6 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <a href="https://github.com/YOUR_GITHUB/qt-gui" target="_blank" style="color: var(--clr-accent);">
-            View on GitHub
-          </a>
         </div>
       </section>
 
@@ -243,7 +254,7 @@
     
         <!-- Project Description -->
         <p>
-          Ball on a plate.
+          Ball on a plate. Despite having the worst name in my portfolio, this project is perhaps closest to my heart. 
         </p>
     
         <!-- Technology Badges -->
@@ -280,11 +291,6 @@
             <span>FreeRTOS</span>
             <span>KiCad</span>
           </div>
-      
-          <!-- GitHub Link -->
-          <a href="https://github.com/YOUR_GITHUB/project1" target="_blank" style="color: var(--clr-accent);">
-            View on GitHub
-          </a>
         </div>
       </section>
 
