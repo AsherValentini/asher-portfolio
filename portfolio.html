@@ -218,7 +218,6 @@
                       <li>Ball on a Plate (Personal Project)</li>
                     </ul>
               </ul>
-      
           <!-- Technology Badges -->
           <div class="tech-badges">
             <span>EasyEDA</span>
@@ -230,17 +229,11 @@
             <span>I2C</span>
             <span>FlexiStepper</span>
           </div>
-    
         </div>
       </section>
     <!-- GUI BOAP -->
     <section>
         <div class="card">
-          <h3>Cross-Platform GUI with Qt</h3>
-          <p>
-            Desktop application for live sensor data visualization and device control.
-            Hover over the videos below to see the GUI in action.
-          </p>
           <div class="video-container">
             <video class="portfolio-video" muted loop>
               <source src="assets/videos/UI_color_tracking.mp4" type="video/mp4">
@@ -251,10 +244,40 @@
               Your browser does not support the video tag.
             </video>
           </div>
+        <div class = "card-description">
+          <h2>Cross Platform Control Application with Qt</h2>
+          <p>
+            Here is a closer look at the Ball on a Plate's control application and GUI. The software allows the user to control the plate's two axis with a
+            custom joystick widget(logic implemented), or select a quadrant for the system to automatically place the ball (logic underdevelopment).
+            In addition to control, the GUI displays motion tracking video feedback and an <i>interactable</i> 3D model of the system.  
+          </p>
+          <h3>Key Highlights:</h3>
+          <ul>
+            <li>Libraries and Modules</li>
+              <ul>
+              <li>VTX for embedding 3D images into a GUI</li> 
+              <li>Custom module for 3D image mouse tracking</li> 
+              <li>OpenCV data handling</li> 
+              <li>Motion tracking algorithm reflected on video playback</li> 
+              <li>Custom joystick widget module</li> 
+              </ul>
+              <li>Mutlithreaded application following OOP and event driven architecture design patterns</li>
+              <li>Custom built state machine for serial over USB communcation sequencing</li>
+          </ul>
+        <!-- Technology Badges -->
+        <div class="tech-badges">
+          <span>Python3</span>
+          <span>Qt</span>
+          <span>QThread</span>
+          <span>USB</span>
+          <span>VTX</span>
+          <span>OpenCV</span>
+          <span>Pyserial</span>
         </div>
+    </div>
+  </div>
       </section>
-
-    <!-- PROJECT BASESTATION -->
+    <!-- BALL ON A PLATE -->
     <section>
       <div class="card">
         <h3>Ball on a Plate</h3>
