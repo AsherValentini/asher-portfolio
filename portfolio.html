@@ -21,10 +21,10 @@
   </header>
   <!-- MAIN CONTENT -->
   <main>
+    <!--TITLE EMBEDDED-->
     <section>
-      <h1 class="section-title">My Top 10</h1>
+      <h1 class="section-title">My Top Embedded</h1>
     </section>
-
     <!-- PROJECT BASESTATION -->
     <div class="card">
       <div class="bst-images">
@@ -67,7 +67,6 @@
         </div>
       </div>
     </div>
-    
     <!-- PROJECT PIEZO -->
     <section>
         <div class="card">
@@ -93,8 +92,8 @@
                 <ul>
                   <li>Drives up to 4 Lee Company HP SERIES micropumps (600mBar/pump)</li>
                   <li>Onboard ESP32 with an FTDI UART to USB converter</li>
-                  <li>4x voltage boosters controlling highside voltages to 4x H-Bridges</li>
-                  <li>4x current tracking op amps for peripheral impedance feedback</li>
+                  <li>4 voltage boosters controlling highside voltages to 4x H-Bridges</li>
+                  <li>4 current tracking op amps for peripheral impedance feedback</li>
                 </ul>
               <li>Firmware </li>
                 <ul>
@@ -119,8 +118,8 @@
             </div>
           </div>
         </div>
-      </section>
-    <!-- GUI BST GUI -->
+    </section>
+    <!-- PROJECT BASESTATION GUI -->
     <section>
       <div class="card">
         <div class="video-container">
@@ -140,27 +139,27 @@
               control. Hover over the videos to see the GUI and control softwware in action.
             </p>
           <h3>Key Highlights:</h3>
-          <ul>
-            <li>Mutlithreaded application folliwing OOP, MVC, and event-driven design patterns</li>
-            <li>Embedded protobuf serialization</li>
-            <li>Custom built state machine for serial over USB communcation sequencing</li>
-            <li>Data handling and visualization</li>
-              <ul>
-              <li>Working fluid flow rate feeback</li> 
-              <li>Current and voltage feedback from a propriety signal generator</li> 
-              <li>Temperature feeback</li> 
-              <li>Device connection statuses</li> 
-              </ul>
-              <li>Control</li>
-              <ul>
-              <li>2 peristaltic pumps</li> 
-              <li>4 stepper motors</li> 
-              <li>2 peltier pads (on/off algorithm for temperature control)</li> 
-              <li>1 Power Supply Unit's actuation and voltage rail settings</li> 
-              <li>1 Signal Generator's actuation, frequency and duty cycle settings</li> 
-              <li>4 Automated experiment protocols</li> 
-              </ul>
-          </ul>
+            <ul>
+              <li>Mutlithreaded application folliwing OOP, MVC, and event-driven design patterns</li>
+              <li>Embedded protobuf serialization</li>
+              <li>Custom built state machine for serial over USB communcation sequencing</li>
+              <li>Data handling and visualization</li>
+                <ul>
+                <li>Working fluid flow rate feeback</li> 
+                <li>Current and voltage feedback from a propriety signal generator</li> 
+                <li>Temperature feeback</li> 
+                <li>Device connection statuses</li> 
+                </ul>
+                <li>Control</li>
+                <ul>
+                <li>2 peristaltic pumps</li> 
+                <li>4 stepper motors</li> 
+                <li>2 peltier pads (on/off algorithm for temperature control)</li> 
+                <li>1 Power Supply Unit's actuation and voltage rail settings</li> 
+                <li>1 Signal Generator's actuation, frequency and duty cycle settings</li> 
+                <li>4 Automated experiment protocols</li> 
+                </ul>
+            </ul>
             <!-- Technology Badges -->
             <div class="tech-badges">
               <span>Python3</span>
@@ -230,8 +229,49 @@
             <span>FlexiStepper</span>
           </div>
         </div>
-      </section>
-    <!-- GUI BOAP -->
+    </section>
+    <!-- PROJECT BALL ON A PLATE -->
+    <section>
+      <div class="card">
+        <!-- Project Images -->
+        <div class="bst-images">
+          <img src="assets/images/balL_on_a_plate_iso.png" alt="Project Image 1" />
+          <img src="assets/images/balL_on_a_plate_parts.png" alt="Project Image 3" />
+        </div>
+        <div class = "card-description"> 
+          <!-- Project Description -->
+          <h2>Ball on a Plate</h2>
+            <p>
+              Like its name, this project is underdevelopment. The idea being to control a plate's orientation to automatically balance a ball at various setpoint positions on the plate. 
+              The projects mechanical, electronic, and motion tracking software design are all complete. Currently, I am working on the position control algorithm.  
+            </p>
+              <h3>Key Highlights:</h3>
+              <ul>
+                <li>Manual/Automatic control over plate orientation</li>
+                <li>Cross platform control application with interactive GUI</li>
+                <li>Ball position video feedback</li>
+                <li>Embedded switching power supply</li>
+                <li>Electronics housing unit</li>
+                <li>Compatible with OpenMV and OpenCV feedback</li>
+              </ul>
+            <!-- Technology Badges -->
+            <div class="tech-badges">
+              <span>3D manufacturing</span>
+              <span>OnShape CAD</span>
+              <span>SeeBok design</span>
+              <span>Mechanical Design</span>
+              <span>Electronic Design</span>
+              <span>Motion Tracking</span>
+              <span>Embedded C++</span>
+              <span>Python3</span>
+              <span>USB</span>
+              <span>OpenCV</span>
+              <span>OpenMV</span>
+            </div>
+        </div>
+      </div>
+  </section>  
+    <!-- PROJECT BALL ON A PLATE GUI -->
     <section>
         <div class="card">
           <div class="video-container">
@@ -244,66 +284,40 @@
               Your browser does not support the video tag.
             </video>
           </div>
-        <div class = "card-description">
-          <h2>Cross Platform Control Application with Qt</h2>
-          <p>
-            Here is a closer look at the Ball on a Plate's control application and GUI. The software allows the user to control the plate's two axis with a
-            custom joystick widget(logic implemented), or select a quadrant for the system to automatically place the ball (logic underdevelopment).
-            In addition to control, the GUI displays motion tracking video feedback and an <i>interactable</i> 3D model of the system.  
-          </p>
-          <h3>Key Highlights:</h3>
-          <ul>
-            <li>Libraries and Modules</li>
-              <ul>
-              <li>VTX for embedding 3D images into a GUI</li> 
-              <li>Custom module for 3D image mouse tracking</li> 
-              <li>OpenCV data handling</li> 
-              <li>Motion tracking algorithm reflected on video playback</li> 
-              <li>Custom joystick widget module</li> 
-              </ul>
-              <li>Mutlithreaded application following OOP and event driven architecture design patterns</li>
-              <li>Custom built state machine for serial over USB communcation sequencing</li>
-          </ul>
-        <!-- Technology Badges -->
-        <div class="tech-badges">
-          <span>Python3</span>
-          <span>Qt</span>
-          <span>QThread</span>
-          <span>USB</span>
-          <span>VTX</span>
-          <span>OpenCV</span>
-          <span>Pyserial</span>
-        </div>
-    </div>
-  </div>
-      </section>
-    <!-- BALL ON A PLATE -->
-    <section>
-      <div class="card">
-        <h3>Ball on a Plate</h3>
-        <!-- Project Images -->
-        <div class="bst-images">
-          <img src="assets/images/balL_on_a_plate_iso.png" alt="Project Image 1" />
-          <img src="assets/images/balL_on_a_plate_parts.png" alt="Project Image 3" />
-        </div>
-    
-        <!-- Project Description -->
-        <p>
-          Ball on a plate. Despite having the worst name in my portfolio, this project is perhaps closest to my heart. 
-        </p>
-    
-        <!-- Technology Badges -->
-        <div class="tech-badges">
-          <span>System Design</span>
-          <span>EasyEDA</span>
-          <span>LTSpice</span>
-          <span>Qt</span>
-          <span>Embedded C++</span>
-          <span>Python3</span>
+          <div class = "card-description">
+            <h2>Cross Platform Control Application with Qt</h2>
+            <p>
+              Here is a closer look at the Ball on a Plate's control application and GUI. The software allows the user to control the plate's two axis with a
+              custom joystick widget(logic implemented), or select a quadrant for the system to automatically place the ball (logic underdevelopment).
+              In addition to control, the GUI displays motion tracking video feedback and an <i>interactable</i> 3D model of the system.  
+            </p>
+            <h3>Key Highlights:</h3>
+            <ul>
+              <li>Libraries and Modules</li>
+                <ul>
+                <li>VTX for embedding 3D images into a GUI</li> 
+                <li>Custom module for 3D image mouse tracking</li> 
+                <li>OpenCV data handling</li> 
+                <li>Motion tracking algorithm reflected on video playback</li> 
+                <li>Custom joystick widget module</li> 
+                </ul>
+                <li>Mutlithreaded application following OOP and event driven architecture design patterns</li>
+                <li>Custom built state machine for serial over USB communcation sequencing</li>
+            </ul>
+          <!-- Technology Badges -->
+          <div class="tech-badges">
+            <span>Python3</span>
+            <span>Qt</span>
+            <span>QThread</span>
+            <span>USB</span>
+            <span>VTX</span>
+            <span>OpenCV</span>
+            <span>Pyserial</span>
+          </div>
         </div>
       </div>
-  </section>      
-    <!-- PROJECT PAC -->
+    </section>    
+    <!-- PROJECT 3PAC -->
     <section>
         <div class="card">
           <!-- Project Images -->
@@ -327,8 +341,7 @@
             <span>KiCad</span>
           </div>
         </div>
-      </section>
-
+    </section>
     <!-- PROJECT PIEZO V1.0 -->
     <section>
         <div class="card">
@@ -359,15 +372,14 @@
             View on GitHub
           </a>
         </div>
-      </section>
-      
-
-    <!-- Inverse -->
+    </section>
+    <!--TITLE OTHER-->
     <section>
-      <div class="card">
-        <h3>Inverse Game App</h3>
-        <p>A Flutter-based mobile game with interactive levels and a sleek UI design.</p>
-    
+      <h1 class="section-title">Now for Something Different</h1>
+    </section>
+    <!-- PROJECT INVERSE -->
+    <section>
+      <div class="card">    
         <!-- Media Container -->
         <div class="inverse-media-container">
           <!-- Image 1 -->
@@ -375,29 +387,42 @@
     
           <!-- Image 2 -->
           <img src="assets/images/Inverse_LP.png" alt="Inverse Game Level Screen" class="inverse-media-item" />
-    
           <!-- Video -->
           <video controls class="inverse-media-item">
             <source src="assets/videos/inverse_game_play.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-    
-        <!-- Technology Badges -->
-        <div class="tech-badges">
-          <span>Flutter</span>
-          <span>Dart</span>
-          <span>Mobile Development</span>
+        <div class = "card-description">
+          <h2>Inverse Game App</h2>
+            <p>
+            Simply a fun side project of a Flutter-based mobile game with interactive levels. The app is the birth child of a family 
+            dinner table game. The idea being to try guess the name of a movie based on the opposite title. 
+            </p>
+          <h3>Key Highlights:</h3>
+          <ul>
+            <li>IOS and Andriod compatability (Inherent with Flutter SDK)</li>
+            <li>Splash screen</li> 
+            <li>Custom built icon logo</li> 
+            <li>18 Levels</li> 
+            <li>Level progression memory</li> 
+            <li>Animated answer feedback</li> 
+          </ul>
+          <!-- Technology Badges -->
+          <div class="tech-badges">
+            <span>Android Studio</span>
+            <span>Android SDK</span>
+            <span>Flutter SDK</span>
+            <span>Dart</span>
+            <span>Android App Development</span>
+            <span>Gradle</span>
+            <span>CMake</span>
+            <span>UX/UI</span>
+          </div>
         </div>
-    
-        <!-- GitHub Link (Optional) -->
-        <a href="https://github.com/YOUR_GITHUB/inverse-game" target="_blank" style="color: var(--clr-accent);">
-          View on GitHub
-        </a>
       </div>
     </section>
-
-    <!-- GUI BOAP -->
+    <!-- GUI HFT -->
     <section>
     <div class="card">
       <h3>Cross-Platform GUI with Qt</h3>
@@ -415,13 +440,11 @@
         View on GitHub
       </a>
     </div>
-  </section>
-
+    </section>
   </main>
-
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Asher Valentini</p>
+    <p>&copy; 2025 Asher Valentini (v1.0)</p>
   </footer>
 
   <script src="script.js"></script>
