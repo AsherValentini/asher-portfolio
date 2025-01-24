@@ -23,9 +23,10 @@
   <main>
     <!--TITLE EMBEDDED-->
     <section>
-      <h1 class="section-title">My Top Embedded</h1>
+      <h1 class="section-title">My Top 10</h1>
     </section>
     <!-- PROJECT BASESTATION -->
+    <section>
     <div class="card">
       <div class="bst-images">
         <img src="assets/images/basestation_iso.jpeg" alt="Project Image 1" />
@@ -41,6 +42,13 @@
         </p>
         <h3>Key Highlights:</h3>
         <ul>
+          <li>My Design Contributions:</li>
+          <ul>
+            <li>Microfluidic embedded firmware/hardware and mechanics</li>
+            <li>Control application software</li>
+            <li>Graphical user interface (GUI)</li>
+            <li>Sotware DevOps (CI/CID pipelines and SW testing)</li>
+          </ul>
             <li>Deployed in:</li>
             <ul>
               <li>1 hospital</li>
@@ -67,6 +75,7 @@
         </div>
       </div>
     </div>
+    </section>
     <!-- PROJECT PIEZO -->
     <section>
         <div class="card">
@@ -85,7 +94,7 @@
              A personal development of a piezoelectric micropump driver circuit board for pressure driven liquid control in microfluidic systems.
             </p>
             <h3>
-              Key Highlights:
+            Key Highlights:
             </h3>
             <ul>
               <li>Hardware </li>
@@ -328,17 +337,31 @@
           </div>
       
           <!-- Project Description -->
-          <h3>Multipurpose Automation Controller</h3>
-          <p>
-            Developed a stepper driver circuit board for precise liquid control in microfluidic systems. Utilized real-time firmware and advanced control algorithms.
-          </p>
-      
-          <!-- Technology Badges -->
-          <div class="tech-badges">
-            <span>Embedded C++</span>
-            <span>ESP32</span>
-            <span>FreeRTOS</span>
-            <span>KiCad</span>
+           <div class = "card-description">
+            <h2>Multipurpose Automation Controller</h2>
+            <p>
+              This board is a co-developement with the talented Nicolas Heimburger (who thankfully took charge of routing the PCB). 
+              The board is a blanket controller for peripherals that one might require in any given robotics project. 
+            </p>
+            <h3>
+              My Contributions
+            </h3>
+              <ul>
+                <li>HW/SW for sensor feedback</li>
+                <li>HW/SW for relay control</li>
+                <li>HW/SW for LED drivers</li>
+                <li>GPIO expander IC integration</li>
+                <li>Current regulating IC integration for solenoid actuation and temperature control</li>
+              </ul>
+            <!-- Technology Badges -->
+            <div class="tech-badges">
+              <span>LTSpice</span>
+              <span>EasyEDA</span>
+              <span>Embedded C++</span>
+              <span>USB</span>
+              <span>UART</span>
+              <span>I2C</span>
+            </div>
           </div>
         </div>
     </section>
@@ -354,23 +377,39 @@
           </div>
       
           <!-- Project Description -->
-          <h3>Piezo Driver v1.0</h3>
-          <p>
-            Developed a stepper driver circuit board for precise liquid control in microfluidic systems. Utilized real-time firmware and advanced control algorithms.
-          </p>
-      
+          <div class = "card-description">
+            <h2>Piezo Driver v1.0</h2>
+            <p>
+              The first iteration of my Piezoelectric micropump driver board. This board is designed to interface specifically with 
+              the Sensirion SLF flow rate sensor. 
+            </p>
+        
+            Key Highlights:
+          </h3>
+          <ul>
+            <li>Hardware </li>
+              <ul>
+                <li>Drives up to 2 Lee Company XP SERIES micropumps (600mBar/pump)</li>
+                <li>Onboard ESP32 with an FTDI UART to USB converter</li>
+                <li>2 voltage boosters controlling highside voltages to 2 H-Bridges</li>
+                <li>2 current tracking op amps for peripheral impedance feedback</li>
+              </ul>
+            <li>Firmware </li>
+              <ul>
+                <li>PID control algorithm regulating PWM signals to voltage boosters</li>
+                <li>H-Bridge driving logic</li>
+              </ul>
+          </ul>
           <!-- Technology Badges -->
           <div class="tech-badges">
+            <span>LTSpice</span>
+            <span>EasyEDA</span>
             <span>Embedded C++</span>
-            <span>ESP32</span>
-            <span>FreeRTOS</span>
-            <span>KiCad</span>
+            <span>USB</span>
+            <span>UART</span>
+            <span>I2C</span>
           </div>
-      
-          <!-- GitHub Link -->
-          <a href="https://github.com/YOUR_GITHUB/project1" target="_blank" style="color: var(--clr-accent);">
-            View on GitHub
-          </a>
+          </div>
         </div>
     </section>
     <!--TITLE OTHER-->
@@ -422,23 +461,35 @@
         </div>
       </div>
     </section>
-    <!-- GUI HFT -->
+    <!-- PROJECT HFT -->
     <section>
     <div class="card">
-      <h3>Cross-Platform GUI with Qt</h3>
-      <p>
-        Desktop application for live sensor data visualization and device control.
-        Hover over the videos below to see the GUI in action.
-      </p>
       <div class="video-container">
         <video class="portfolio-video" muted loop>
           <source src="assets/videos/MQL.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-      <a href="https://github.com/YOUR_GITHUB/qt-gui" target="_blank" style="color: var(--clr-accent);">
-        View on GitHub
-      </a>
+      <div class = "card-description">
+        <h2>Expert Advisor with MQL</h2>
+          <p>
+          Expert advisors are bots that automate trades based on trading algorithms. Above is a video of one of mine in action. 
+          I am not by any means an HFT algo developer, but I think this project displays the fact that 
+          I am happy to engage with tools and technologies that would traditionally fall out of the scope of embedded engineering. 
+          </p>
+          <h3>Key Highlights:</h3>
+          <ul>
+            <li>Linked and launched to stoke broker server</li>
+            <li>2 year back testing with tickdata suit</li> 
+          </ul>
+          <!-- Technology Badges -->
+          <div class="tech-badges">
+            <span>MQL</span>
+            <span>MetaTrader4 SDK</span>
+            <span>Tick Data Sweet</span>
+
+          </div>
+      </div>
     </div>
     </section>
   </main>

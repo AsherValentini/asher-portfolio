@@ -77,6 +77,15 @@ nav a:hover {
   color: var(--clr-accent-hover);
 }
 
+a {
+  color: #3366cc; /* Muted blue */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+a:hover {
+  color: #1a4d99; /* Slightly darker blue on hover */
+}
+
 /* MAIN LAYOUT */
 main {
   padding: 4rem 2rem;
