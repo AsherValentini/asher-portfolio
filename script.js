@@ -7,6 +7,7 @@ console.log("Your personal website loaded with JetBrains style! :)");
 const videos = document.querySelectorAll('.portfolio-video');
 const bst_videos = document.querySelectorAll('.portfolio-video-bst');
 
+// This hover affect should only work for the Ball on a Plate GUI
 videos.forEach(video => {
   video.addEventListener('mouseenter', () => {
     video.play();
