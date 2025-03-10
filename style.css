@@ -402,3 +402,24 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
