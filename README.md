@@ -1,2 +1,2 @@
 # asher-portfolio
-My resume, portfolio and current projects 
+My resume, portfolio, and current projects 
