@@ -25,3 +25,19 @@ bst_videos.forEach(video => {
     video.pause();
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleArrows = document.querySelectorAll('.toggle-arrow');
+
+  toggleArrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+      const cardBody = arrow.closest('.collapsible-card').querySelector('.card-body');
+      cardBody.classList.toggle('expanded');
+      cardBody.classList.toggle('collapsed');
+      arrow.classList.toggle('rotated');
+    });
+  });
+});
+
+
